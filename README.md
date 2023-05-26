@@ -25,3 +25,9 @@ After the inputs are obtained, the program displays the input results using cout
 
 ## 007_ConvertToHex.cpp
 The given program allows the user to input values, and the integer input will be displayed in hexadecimal format.
+
+## 008_InputAndManipulator.cpp
+The provided program is a simple C++ program that prompts the user to input a number and then displays the inputted value with 2 decimal places.
+The program begins by declaring a variable bilangan of type double to store the inputted value. It then uses cout to display the message "Silahkan Input bilangan: " to prompt the user for input. The user's input is read using cin and stored in the variable bilangan.
+Next, the program utilizes the setiosflags function from the iomanip library to set the output format to fixed-point notation. This ensures that the number is displayed with a fixed number of decimal places.
+Finally, the program uses cout to display the message "Nilai yang di inputkan: " followed by the inputted value stored in the bilangan variable. The setprecision function is used to specify that the number should be displayed with 2 decimal places. The output is then followed by an endline character. The program concludes by returning 0.
