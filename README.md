@@ -108,3 +108,143 @@ The program prompts the user to enter the first number and the second number usi
 Next, an if statement is used to check if the value of a is less than the value of b. If true, the program swaps the values of a and b using the variable c as a temporary variable. This step ensures that a always holds the larger value.
 The program then enters a do-while loop that performs the Euclidean algorithm. Inside the loop, the program calculates the remainder of a divided by b and stores it in d. The value of a is then updated to hold the value of b, and the value of b is updated to hold the value of d. This process continues until the remainder d becomes zero, indicating that the GCD has been found.
 After the loop terminates, the program displays the GCD, which is stored in variable a, using cout.
+
+## 021_CalculateNumberFromOneToInput.cpp
+The given program calculates the sum of numbers from 1 to the input number using a for loop.
+In the program, integer variables a, b, c, and d are declared. a is used to store the input number, b and d are loop control variables, and c is used to store the sum.
+The program prompts the user to enter a number using cout and cin statements.
+A for loop is then used to calculate the sum. The loop iterates from 1 to a, and in each iteration, the value of b is added to c, updating the sum.
+After the loop, the program displays the sum by using a second for loop. This loop starts with the value of a and iterates down to 1, printing each number followed by a "+" sign. Finally, the number 1 is printed.
+
+## 022_PowerCalculation.cpp
+The given program calculates the power of a number using a for loop.
+In the program, integer variables a, b, c, and d are declared. a is used to store the base number, b is used to store the exponent, c is a loop control variable, and d is used to store the result of the power calculation.
+The program prompts the user to enter the base number and the exponent using cout and cin statements.
+A for loop is then used to calculate the power. The loop iterates from 1 to b-1, and in each iteration, the value of d is multiplied by a, updating the result.
+After the loop, the program displays the result of the power calculation using d and returns 0, indicating successful execution.
+
+## 023_LeastCommonMultiple.cpp
+The program calculates the least common multiple (KPK) of two numbers entered by the user. It prompts the user to input two numbers, 'a' and 'b'. It initializes 'c' with the value of 'a'. Then, using a do-while loop, it repeatedly adds 'a' to 'c' until 'c' becomes a multiple of 'b'. Finally, it displays the calculated least common multiple (KPK) as the output.
+
+## 024_ArrayWithLoop.cpp
+The program creates an array called "TabInt" of size 10 and initializes it with values. It uses a for loop to assign values to each element of the array, where each element is set as the index multiplied by 10. Then, it uses another for loop to display the values of the array. Each element of the array is printed on a new line. Finally, the program returns 0 to indicate successful execution.
+
+## 025_ArrayMatriksTwoD.cpp
+The program declares a 2-dimensional array called "matriks" with 2 rows and 4 columns. It initializes the array with the given values. It also declares variables "baris" and "kolom" for the loop iterations.
+The program then uses nested for loops to iterate through each element of the array. The outer loop iterates over the rows, and the inner loop iterates over the columns. Inside the loops, it prints the value of each element of the array followed by a space.
+After printing all the elements of a row, it moves to a new line by using cout << endl;.
+
+## 026_ArrayMonth.cpp
+The program declares a string array called "bulan" that stores the names of the months in Indonesian. Each element of the array represents a month.
+The program also declares an integer variable "masukkan" to store user input.
+In the main function, it prompts the user to enter a number corresponding to a month. The input is stored in the "masukkan" variable.
+Then, it prints the name of the month based on the user's input by accessing the corresponding element in the "bulan" array. Since arrays are zero-indexed, it subtracts 1 from the user's input to retrieve the correct element.
+Finally, it displays the name of the month using the "cout" statement.
+
+## 027_ArrayInput.cpp
+The program declares a string array called "daftar_mahasiswa" to store the names of students. The size of the array is set to 39, indicating it can store up to 39 names.
+The program also declares an integer variable "jml_mahasiswa" to store the number of students to be stored in the array.
+In the main function, it prompts the user to enter the number of student names to be stored. The input is stored in the "jml_mahasiswa" variable.
+Next, the program initializes a loop that runs "jml_mahasiswa" times. In each iteration, it prompts the user to enter a student name, which is stored in the "nama" variable. Then, it assigns the value of "nama" to the corresponding element in the "daftar_mahasiswa" array.
+After the loop, the program displays the stored student names by iterating over the array and printing each element using the "cout" statement.
+
+## 027_ArrayMax.cpp
+The program declares an integer array called "daftar_bilangan" with a size of 10 and initializes it with some values.
+In the main function, the program declares an integer variable "indeks" to represent the index of the array and another integer variable "maks" to store the maximum value found.
+The program then enters a loop that iterates through each element of the "daftar_bilangan" array. It compares each element with the current maximum value stored in the "maks" variable. If the element is greater than the current maximum, it updates the value of "maks" to the new maximum value.
+After the loop, the program displays the maximum value found using the "cout" statement.
+
+## 028_ArrayMatrixSum.cpp
+The program declares two 2-dimensional integer arrays, "a" and "b," each with dimensions 3x5, and initializes them with some values.
+It also declares another 2-dimensional integer array "c" with the same dimensions to store the result of the addition of arrays "a" and "b".
+In the main function, the program displays the matrix "a" by iterating through each element and printing its value. It then displays the matrix "b" in the same manner.
+After that, it displays the result of the addition of matrices "a" and "b" by iterating through each element, performing the addition, and printing the equation and its result.
+
+## 029_ArrayOddNumber.cpp
+This program allows the user to input 5 numbers into an array called "bil". It then checks the array for odd numbers and displays them.
+In the main function, the program uses a while loop to iterate 5 times and prompts the user to enter a number each time. The numbers are stored in the array "bil".
+After that, the program uses another while loop to iterate through the array and check if each number is odd (remainder when divided by 2 is 1). If a number is odd, it is displayed, and the variable "b" is incremented.
+Finally, the program checks if any odd numbers were found by checking if the variable "b" is still 0. If so, it displays the message "Tidak ada nilai ganjil" (No odd numbers found).
+
+## 030_ArrayMenu.cpp
+This program presents a menu with different options for manipulating an array. Let's go through the program step by step:
+Variables and Initialization:
+- Variables a, b, c, and e are declared to store user choices and intermediate values.
+  Array d of size 10 is declared to store integer values.
+- Input Loop:
+  The program starts with a label awal that serves as the entry point to the program.
+  The menu options are displayed using cout, and the user is prompted to enter their choice.
+  If the user selects option 1, they will be asked to input 10 numbers into the array d using a while loop and cin.
+  Once the input is complete, the program displays a message confirming the successful input and clears the screen.
+  The program then returns to the menu.
+- Display Array:
+  If the user selects option 2, the program displays the contents of array d using a while loop.
+  After displaying the array, the program waits for user input and clears the screen before returning to the menu.
+- Find Minimum:
+  If the user selects option 3, the program initializes variables b and c to 0 and sets c as the first element of array d.
+  Using a while loop, the program compares each element of array d with c and updates c if a smaller value is found.
+  Finally, the program displays the minimum value of array d, waits for user input, clears the screen, and returns to the menu.
+- Find Maximum:
+  If the user selects option 4, the program initializes variables b and c to 0 and sets c as the first element of array d.
+  Using a while loop, the program compares each element of array d with c and updates c if a larger value is found.
+  Finally, the program displays the maximum value of array d, waits for user input, clears the screen, and returns to the menu.
+- Calculate Average:
+  If the user selects option 5, the program initializes variables b and e to 0.
+  Using a while loop, the program adds up all the elements of array d and stores the sum in e.
+  The sum is then divided by 10 (the number of elements) to calculate the average.
+  The average is displayed with 2 decimal places using setprecision, and the program waits for user input, clears the screen, and returns to the menu.
+- Invalid Choice:
+If the user selects an option other than 1-5, the program displays "Tidak valid" (Not valid) and exits the program.
+The program uses labels and goto statements to create a loop that allows the user to re-enter choices. While goto can be a useful tool in some cases, it is generally discouraged in modern programming practices.
+
+## 031_ArrayCheck.cpp
+This program allows the user to input a number and checks whether that number exists in an array. Let's go through the program step by step:
+- Variables and Initialization:
+  Array daftar of size 5 is initialized with values 1, 2, 3, 4, and 5.
+  Variables a, b, and c are declared to store user input and intermediate values.
+  Variable b is set to 0.
+- Display Available Data:
+  The program displays the contents of the array daftar using a while loop and increments b for each element.
+  The displayed values are separated by spaces.
+  After displaying the array, there are two newlines for spacing.
+- Input Number:
+  The program prompts the user to enter a number using cout and reads the input into variable a using cin.
+- Search Number in Array:
+  The program uses a while loop to iterate through the elements of the array.
+  Inside the loop, it checks if the current element is equal to the input number a.
+  If a match is found, the program displays a message indicating the position (index) of the number in the array and increments c.
+  The variable b is incremented for each iteration.
+- Display Result:
+  After the loop, the program checks the value of c.
+  If c is still 0, it means that the input number does not exist in the array, and a corresponding message is displayed.
+  Two newlines are added for spacing.
+- Program Termination:
+The program ends by returning 0.
+Overall, this program allows the user to input a number and checks whether that number exists in the array. It provides feedback indicating whether the number is present in the array and its position if it exists, or a message indicating that the number is not in the array.
+
+## 032_ArrayMatrixAdditionAndSubtraction.cpp
+This program performs matrix addition and subtraction. Let's break down the code:
+- Matrices Initialization:
+  Five matrices, a, b, c, d, e, and f, are declared and initialized with their respective values.
+  Matrices a, b, c, and d are 3x3 matrices, while matrices e and f will store the results of addition and subtraction operations.
+  Variables g, h, and i are declared.
+- Menu Display and Input:
+  The program displays a menu for the user to choose between matrix addition and subtraction.
+  The user input is stored in variable g using cin.
+- Matrix Addition (Case 1):
+  If the user selects option 1 (matrix addition), the program executes the code under case 1 in the switch statement.
+  Matrix a is displayed first using nested while loops.
+  Matrix b is then displayed using similar nested loops.
+  The program performs matrix addition by adding corresponding elements of matrices a and b and stores the result in matrix e.
+  Finally, the resulting matrix e is displayed using nested loops.
+- Matrix Subtraction (Case 2):
+  If the user selects option 2 (matrix subtraction), the program executes the code under case 2 in the switch statement.
+  Matrix c is displayed first using nested while loops.
+  Matrix d is then displayed using similar nested loops.
+  The program performs matrix subtraction by subtracting corresponding elements of matrices c and d and stores the result in matrix f.
+  Finally, the resulting matrix f is displayed using nested loops.
+- Default Case:
+  If the user selects an option other than 1 or 2, the program executes the code under default in the switch statement and displays "Tidak Valid!" (Not Valid!).
+- Program Termination:
+  The program ends by returning 0.
+Overall, this program allows the user to select between matrix addition and subtraction. It displays the input matrices, performs the chosen operation, and displays the resulting matrix.
