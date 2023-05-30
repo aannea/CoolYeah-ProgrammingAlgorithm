@@ -248,3 +248,171 @@ This program performs matrix addition and subtraction. Let's break down the code
 - Program Termination:
   The program ends by returning 0.
 Overall, this program allows the user to select between matrix addition and subtraction. It displays the input matrices, performs the chosen operation, and displays the resulting matrix.
+
+## 033_FunctionSquare.cpp
+This program calculates the perimeter and area of a square. Let's go through the code:
+- Function Declarations:
+  The program declares two functions: hitung_keliling and hitung_luas. Both functions take an integer parameter s representing the length of a side.
+- Global Variable:
+  The program declares a global variable s which will store the length of the side of the square.
+- Main Function:
+  The program starts the execution from the main function.
+  It prompts the user to enter the length of the side of the square using the cout statement.
+  The user's input is stored in the s variable using the cin statement.
+- Perimeter Calculation:
+  The program calls the hitung_keliling function and passes the value of s as an argument.
+  The hitung_keliling function calculates the perimeter of the square by multiplying the length of a side by 4 and returns the result.
+  The calculated perimeter is displayed using the cout statement.
+- Area Calculation:
+  The program calls the hitung_luas function and passes the value of s as an argument.
+  The hitung_luas function calculates the area of the square by squaring the length of a side and returns the result.
+  The calculated area is displayed using the cout statement.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program allows the user to enter the length of a side of a square and calculates its perimeter and area using separate functions. The calculated values are then displayed on the screen.
+
+## 034_FunctionCircle.cpp
+This program calculates the perimeter and area of a square using a procedure. Let's go through the code:
+- Global Variable:
+  The program declares a global variable s which will store the length of the side of the square.
+- Procedure Definition:
+  The program defines a procedure named keliling_luas_lingkaran which takes an integer parameter s representing the length of a side.
+- Perimeter and Area Calculation:
+  Inside the keliling_luas_lingkaran procedure, the program calculates the area by squaring the length of a side and stores it in the luas variable.
+  It calculates the perimeter by multiplying the length of a side by 4 and stores it in the keliling variable.
+- Output:
+  The program displays the calculated perimeter and area using the cout statement inside the keliling_luas_lingkaran procedure.
+- Main Function:
+  The program starts the execution from the main function.
+  It prompts the user to enter the length of the side of the square using the cout statement.
+  The user's input is stored in the s variable using the cin statement.
+- Procedure Call:
+  The program calls the keliling_luas_lingkaran procedure and passes the value of s as an argument.
+  Inside the procedure, the perimeter and area of the square are calculated and displayed on the screen.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program allows the user to enter the length of a side of a square and calculates its perimeter and area using a procedure. The calculated values are then displayed on the screen.
+
+## 035_ProcedureCompere.cpp
+This program compares two numbers and displays the greater number. Let's go through the code:
+- Global Variables:
+  The program declares two global variables bil1 and bil2 which will store the two numbers to be compared.
+- Procedure Definition:
+  The program defines a procedure named banding which takes two integer parameters a and b.
+- Comparison and Output:
+  Inside the banding procedure, the program compares the values of a and b using an if statement.
+  If a is greater than b, it displays the value of a using the cout statement.
+  If a is equal to b, it displays the message "Tidak ada" using the cout statement.
+  If none of the above conditions are true, it means b is greater than a, so it displays the value of b using the cout statement.
+- Main Function:
+  The program starts the execution from the main function.
+  It prompts the user to enter the values of bil1 and bil2 using the cout statements.
+  The user's inputs are stored in the bil1 and bil2 variables using the cin statements.
+- Output:
+  The program displays the message "Bilangan yang lebih besar adalah: " using the cout statement.
+- Procedure Call:
+  The program calls the banding procedure and passes the values of bil1 and bil2 as arguments.
+  Inside the procedure, the numbers are compared and the greater number or appropriate message is displayed on the screen.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program allows the user to enter two numbers and compares them to determine the greater number. The greater number is then displayed on the screen. If the numbers are equal, it displays the message "Tidak ada" (None).
+
+## 036_FunctionOddOrEven.cpp
+This program allows the user to enter a number and determines whether it is odd or even. Here's how the code works:
+- Variable Declaration:
+  The program declares an integer variable a to store the user's input.
+  It also declares a character variable b to store the user's choice of repeating the program.
+  Lastly, it declares a string variable c to store the result of whether the number is odd or even.
+- Function Definition:
+  The program defines a function named cari which takes an integer parameter a.
+- Odd or Even Check:
+  Inside the cari function, the program uses an if statement to check if the number a is odd.
+  If the remainder of a divided by 2 is 1, it means the number is odd, so the string variable c is assigned the value "Ganjil" (Odd).
+  If the condition is not true, it means the number is even, so the string variable c is assigned the value "Genap" (Even).
+- Main Function:
+  The program starts the execution from the main function.
+  It uses a label lagi to create a point for the goto statement.
+- Output and Input:
+  The program displays the initial messages and prompts the user to enter a number using the cout statements.
+  The user's input is stored in the variable a using the cin statement.
+- Function Call:
+  The program calls the cari function and passes the value of a as an argument.
+  Inside the function, the number is checked to determine whether it is odd or even, and the result is stored in the variable c.
+- Result Display:
+  The program displays the message "Bilangan yang anda masukkan adalah: " followed by the value of c using the cout statement.
+- Repeat Prompt:
+  The program prompts the user to enter 'y' or 't' (yes or no) to repeat the program using the cin statement and stores the input in the variable b.
+- Repeat Execution:
+  If the value of b is 'y' (yes), the program clears the screen using the system("cls") statement and jumps to the label lagi using the goto statement.
+  This allows the program to repeat from the beginning.
+  If the value of b is 't' (no), the program continues execution.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program repeatedly asks the user to enter a number, determines whether it is odd or even, and displays the result. The program provides an option to repeat the process as long as the user chooses to continue.
+
+## 037_FunctionCircumference.cpp
+This program calculates the circumference and area of a circle based on the given radius. Here's how the code works:
+- Header and Variable Declaration:
+  The program includes the necessary headers, iostream and iomanip.
+  It declares a float variable a to store the radius entered by the user.
+  It also declares a character variable b to store the user's choice of repeating the program.
+- Function Definition:
+  The program defines two functions: hitung_keliling and hitung_luas.
+  Both functions take a float parameter a representing the radius of the circle.
+- Calculation of Circumference and Area:
+  The hitung_keliling function calculates the circumference of the circle using the formula (2 * 22 * a) / 7.
+  The hitung_luas function calculates the area of the circle using the formula (22 * a * a) / 7.
+- Main Function:
+  The program starts the execution from the main function.
+  It uses a label lagi to create a point for the goto statement.
+- Output and Input:
+  The program displays the initial messages and prompts the user to enter the radius of the circle using the cout statements.
+  The user's input is stored in the variable a using the cin statement.
+- Calculation and Output Display:
+  The program uses setiosflags(ios::fixed) to set the output format to fixed decimal precision.
+  It then calculates the circumference and area of the circle using the hitung_keliling and hitung_luas functions, respectively.
+  The calculated values are displayed using setprecision(2) to format the output with two decimal places.
+- Repeat Prompt:
+  The program prompts the user to enter 'y' or 't' (yes or no) to repeat the program using the cin statement and stores the input in the variable b.
+- Repeat Execution:
+  If the value of b is 'y' (yes), the program clears the screen using the system("cls") statement and jumps to the label lagi using the goto statement.
+  This allows the program to repeat from the beginning.
+  If the value of b is 't' (no), the program continues execution.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program repeatedly asks the user to enter the radius of a circle, calculates its circumference and area, and displays the results. The program provides an option to repeat the process as long as the user chooses to continue.
+
+## 038_ProcedureSwitchCalculator.cpp
+This program is a calculator that performs various arithmetic operations based on the user's choice. Here's how the code works:
+- Headers and Variable Declaration:
+  The program includes the necessary headers, iostream, iomanip, and math.h.
+  It declares an integer variable a to store the user's menu choice.
+  It declares a character variable b to store the user's choice of repeating the program.
+  It declares two float variables c and d to store the numbers entered by the user.
+- Procedure Definition:
+  The program defines a procedure satu() that handles input for options 1-4 and option 5.
+  If the user's choice is 1-4, the procedure prompts the user to enter two numbers and stores them in variables c and d.
+  If the user's choice is 5, the procedure prompts the user to enter a number and its exponent, which are stored in variables c and d, respectively.
+- Main Function:
+  The program starts the execution from the main function.
+  It uses a label lagi to create a point for the goto statement.
+- Menu Display and Input:
+  The program displays the menu options using cout statements.
+  The user is prompted to enter a choice by using the cin statement and storing the input in the variable a.
+- Input Handling:
+  The program calls the satu() procedure to handle the input for options 1-4 and option 5.
+  Depending on the value of a, different actions are performed.
+- Arithmetic Operations and Output Display:
+  The program uses a switch statement to determine the selected menu option.
+  For options 1-4, it performs the corresponding arithmetic operation and displays the result using cout.
+  For option 5, it uses the pow function from the math.h library to calculate the power and displays the result.
+  If the user's choice is not within the given menu options, a default message is displayed.
+- Repeat Prompt:
+  The program prompts the user to enter 'y' or 't' (yes or no) to repeat the program using the cin statement and stores the input in the variable b.
+- Repeat Execution:
+  If the value of b is 'y' (yes), the program clears the screen using the system("cls") statement and jumps to the label lagi using the goto statement.
+  This allows the program to repeat from the beginning.
+  If the value of b is 't' (no), the program continues execution.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program serves as a simple calculator that performs arithmetic operations based on the user's choice. It provides an option to repeat the calculation process as long as the user chooses to continue.
