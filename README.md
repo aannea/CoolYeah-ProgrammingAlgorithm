@@ -416,3 +416,141 @@ This program is a calculator that performs various arithmetic operations based o
 - Program Termination:
   The program ends by returning 0 from the main function.
 Overall, this program serves as a simple calculator that performs arithmetic operations based on the user's choice. It provides an option to repeat the calculation process as long as the user chooses to continue.
+
+## 039_BubbleSort.cpp
+This program demonstrates the Bubble Sort algorithm to sort an array of doubles in ascending order. Here's how the code works:
+- Procedure Definition:
+  The program defines a procedure bubble_sort that implements the Bubble Sort algorithm to sort an array.
+  It takes two parameters: an array of doubles arr and the length of the array length.
+- Sorting Algorithm:
+  The Bubble Sort algorithm compares adjacent elements in the array and swaps them if they are in the wrong order.
+  The algorithm iterates through the array multiple times until no more swaps are needed, indicating that the array is sorted.
+  Within each iteration, the algorithm compares and swaps adjacent elements as necessary.
+  The not_sorted boolean variable keeps track of whether any swaps occurred during an iteration. If no swaps occurred, the array is considered sorted, and the algorithm stops.
+- Print Array Procedure:
+  The program defines a procedure print_array that takes an array a and its length as parameters.
+  It iterates through the array and prints each element separated by a tab character.
+- Main Function:
+  The program starts the execution from the main function.
+  It declares an integer variable length to store the length of the array.
+  It declares a double array a and initializes it with five double values.
+  The program displays the unsorted array using the print_array procedure.
+- Sorting the Array:
+  The program calls the bubble_sort procedure to sort the array a.
+- Displaying the Sorted Array:
+  The program displays the sorted array using the print_array procedure.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program demonstrates the Bubble Sort algorithm by sorting an array of doubles and displaying the sorted array. It showcases the step-by-step swapping of adjacent elements until the array is sorted in ascending order.
+
+## 040_InsertionSort.cpp
+This program demonstrates the Insertion Sort algorithm to sort an array of characters in descending order. Here's how the code works:
+- Procedure Definition:
+  The program defines a procedure insertion_sort that implements the Insertion Sort algorithm to sort an array.
+  It takes two parameters: an array of characters arr and the length of the array length.
+- Sorting Algorithm:
+  The Insertion Sort algorithm works by dividing the array into a sorted and an unsorted part.
+  It iterates through the unsorted part of the array and inserts each element into its correct position in the sorted part.
+  Within each iteration, the algorithm compares the current element with the elements in the sorted part from right to left.
+  If an element in the sorted part is greater than the current element, it shifts that element one position to the right to make room for the current element.
+  Once the correct position is found, the algorithm inserts the current element into its sorted position.
+  The algorithm continues this process until the entire array is sorted.
+- Print Array Procedure:
+  The program defines a procedure print_array that takes an array a and its length as parameters.
+  It iterates through the array and prints each element separated by a tab character.
+- Main Function:
+  The program starts the execution from the main function.
+  It declares an integer variable length to store the length of the array.
+  It declares a character array a and initializes it with six character values.
+  The program displays the unsorted array using the print_array procedure.
+- Sorting the Array:
+  The program calls the insertion_sort procedure to sort the array a.
+- Displaying the Sorted Array:
+  The program displays the sorted array using the print_array procedure.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program demonstrates the Insertion Sort algorithm by sorting an array of characters in descending order. It showcases the step-by-step insertion of elements into the sorted part of the array until the entire array is sorted.
+
+## 041_SelectionSort.cpp
+This program demonstrates the Selection Sort algorithm to sort an array of double values in descending order. Here's how the code works:
+- Procedure Definition:
+  The program defines a procedure selectSort that implements the Selection Sort algorithm to sort an array.
+  It takes two parameters: an array of double values b and the length of the array a.
+- Sorting Algorithm:
+  The Selection Sort algorithm works by repeatedly finding the maximum element from the unsorted part of the array and swapping it with the last element of the sorted part.
+  Within each iteration, the algorithm selects the maximum element by comparing each element with the current maximum element and updating the index of the maximum element if a larger element is found.
+  After finding the maximum element, the algorithm swaps it with the last element of the sorted part.
+  The algorithm continues this process until the entire array is sorted.
+- Print Array Procedure:
+  The program defines a procedure print_array that takes an array b and its length as parameters.
+  It iterates through the array and prints each element separated by a tab character.
+  The precision of the output is set to 1 decimal place.
+- Main Function:
+  The program starts the execution from the main function.
+  It declares an integer variable a to store the length of the array.
+  It declares a double array b and initializes it with five double values.
+  The program displays the unsorted array using the print_array procedure.
+- Sorting the Array:
+  The program calls the selectSort procedure to sort the array b.
+- Displaying the Sorted Array:
+  The program displays the sorted array using the print_array procedure.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program demonstrates the Selection Sort algorithm by sorting an array of double values in descending order. It showcases the step-by-step selection of the maximum element and its placement at the end of the sorted part of the array.
+
+## 042_BubbleSortArray.cpp
+This program demonstrates the Bubble Sort algorithm to sort an array of strings in ascending order. Here's how the code works:
+- Procedure Definition:
+  The program defines a procedure bubble_sort that implements the Bubble Sort algorithm to sort an array.
+  It takes two parameters: an array of strings a and the length of the array b.
+- Sorting Algorithm:
+  The Bubble Sort algorithm works by repeatedly comparing adjacent elements and swapping them if they are in the wrong order.
+  Within each iteration, the algorithm compares each element with its adjacent element and swaps them if the current element is greater than the next element.
+  This process is repeated until the entire array is sorted.
+  The algorithm also uses a boolean variable c to keep track of whether any swaps have been made in a particular iteration. If no swaps are made, it means the array is already sorted, and the algorithm can terminate early.
+- Print Array Procedure:
+  The program defines a procedure print_array that takes an array a and its length as parameters.
+  It iterates through the array and prints each element separated by a tab character.
+- Main Function:
+  The program starts the execution from the main function.
+  It declares an integer variable b to store the length of the array.
+  It declares a string array a and initializes it with ten string values.
+  The program displays the unsorted array using the print_array procedure.
+- Sorting the Array:
+  The program calls the bubble_sort procedure to sort the array a.
+- Displaying the Sorted Array:
+  The program displays the sorted array using the print_array procedure.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program demonstrates the Bubble Sort algorithm by sorting an array of strings in ascending order. It showcases the step-by-step comparison of adjacent elements and the swapping of elements to gradually move the larger elements towards the end of the array.
+
+## 043_InsertionSortArrayInput.cpp
+This program allows the user to input an array of characters and performs two types of sorting: ascending and descending. Here's how the code works:
+- Input Procedure:
+  The program defines a procedure input that takes two parameters: an integer a (the size of the array) and a character array b.
+  It uses a while loop to iterate a times and prompts the user to enter a character for each array element.
+  The input characters are stored in the array b.
+- Sorting Procedures:
+  The program defines two sorting procedures: sortinga for ascending sort and sortingb for descending sort.
+  Both procedures use the insertion sort algorithm to sort the character array b.
+  The procedures compare each element with its previous element and swap them if they are in the wrong order.
+  The sorting process continues until the entire array is sorted.
+- Display Procedure:
+  The program defines a procedure tampilan that takes two parameters: an integer a (the size of the array) and a character array b.
+  It uses a while loop to iterate a times and prints each character separated by a tab character.
+  The procedure provides a visual representation of the array.
+- Main Function:
+  The program starts the execution from the main function.
+  It prompts the user to enter the number of elements in the array and stores it in the integer variable a.
+  It declares a character array b with size a.
+  The program calls the input procedure to fill the array with user input characters.
+  It displays the array before sorting using the tampilan procedure.
+- Ascending Sort:
+  The program calls the sortinga procedure to sort the array b in ascending order.
+  It displays the array after the ascending sort using the tampilan procedure.
+- Descending Sort:
+  The program calls the sortingb procedure to sort the array b in descending order.
+  It displays the array after the descending sort using the tampilan procedure.
+- Program Termination:
+  The program ends by returning 0 from the main function.
+Overall, this program allows the user to input an array of characters and demonstrates the sorting of the array in both ascending and descending order using the insertion sort algorithm.
