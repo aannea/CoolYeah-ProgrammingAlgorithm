@@ -526,31 +526,193 @@ Overall, this program demonstrates the Bubble Sort algorithm by sorting an array
 
 ## 043_InsertionSortArrayInput.cpp
 This program allows the user to input an array of characters and performs two types of sorting: ascending and descending. Here's how the code works:
-- Input Procedure:
-  The program defines a procedure input that takes two parameters: an integer a (the size of the array) and a character array b.
-  It uses a while loop to iterate a times and prompts the user to enter a character for each array element.
-  The input characters are stored in the array b.
-- Sorting Procedures:
-  The program defines two sorting procedures: sortinga for ascending sort and sortingb for descending sort.
-  Both procedures use the insertion sort algorithm to sort the character array b.
-  The procedures compare each element with its previous element and swap them if they are in the wrong order.
-  The sorting process continues until the entire array is sorted.
-- Display Procedure:
-  The program defines a procedure tampilan that takes two parameters: an integer a (the size of the array) and a character array b.
-  It uses a while loop to iterate a times and prints each character separated by a tab character.
-  The procedure provides a visual representation of the array.
-- Main Function:
-  The program starts the execution from the main function.
-  It prompts the user to enter the number of elements in the array and stores it in the integer variable a.
-  It declares a character array b with size a.
-  The program calls the input procedure to fill the array with user input characters.
-  It displays the array before sorting using the tampilan procedure.
-- Ascending Sort:
-  The program calls the sortinga procedure to sort the array b in ascending order.
-  It displays the array after the ascending sort using the tampilan procedure.
-- Descending Sort:
-  The program calls the sortingb procedure to sort the array b in descending order.
-  It displays the array after the descending sort using the tampilan procedure.
-- Program Termination:
-  The program ends by returning 0 from the main function.
+1. Input Procedure:
+- The program defines a procedure input that takes two parameters: an integer a (the size of the array) and a character array b.
+- It uses a while loop to iterate a times and prompts the user to enter a character for each array element.
+- The input characters are stored in the array b.
+2. Sorting Procedures:
+- The program defines two sorting procedures: sortinga for ascending sort and sortingb for descending sort.
+- Both procedures use the insertion sort algorithm to sort the character array b.
+- The procedures compare each element with its previous element and swap them if they are in the wrong order.
+- The sorting process continues until the entire array is sorted.
+3. Display Procedure:
+- The program defines a procedure tampilan that takes two parameters: an integer a (the size of the array) and a character array b.
+- It uses a while loop to iterate a times and prints each character separated by a tab character.
+- The procedure provides a visual representation of the array.
+4. Main Function:
+- The program starts the execution from the main function.
+- It prompts the user to enter the number of elements in the array and stores it in the integer variable a.
+- It declares a character array b with size a.
+- The program calls the input procedure to fill the array with user input characters.
+- It displays the array before sorting using the tampilan procedure.
+5. Ascending Sort:
+- The program calls the sortinga procedure to sort the array b in ascending order.
+- It displays the array after the ascending sort using the tampilan procedure.
+6.Descending Sort:
+- The program calls the sortingb procedure to sort the array b in descending order.
+- It displays the array after the descending sort using the tampilan procedure.
+7.Program Termination:
+- The program ends by returning 0 from the main function.
 Overall, this program allows the user to input an array of characters and demonstrates the sorting of the array in both ascending and descending order using the insertion sort algorithm.
+
+## 044_SequentalSearch.cpp
+This program implements sequential search to find a specific value in an array of doubles. Here's how the code works:
+1. Sequential Search Function:
+- The program defines a function named sequential_search that takes three parameters: an array of doubles data, an integer n (the size of the array), and a double k (the value to be searched).
+- It initializes the variable posisi (position) to -1.
+- If n is less than or equal to 0, it means the array is empty, so the function returns -1 to indicate that the value is not found.
+- Otherwise, it sets the variable ketemu (found) to 0 and initializes i to 1.
+- It enters a while loop that continues as long as i is less than n-1 and ketemu is false.
+- Inside the loop, it compares each element of the array with the value k.
+  - If a match is found, it updates the posisi variable with the index of the found value and sets ketemu to 1 to indicate a successful search.
+- After the loop, if ketemu is still false, it means the value k is not found in the array, so posisi remains -1.
+- Finally, the function returns the value of posisi.
+2. Main Function:
+- The program starts the execution from the main function.
+- It declares an integer variable n with the size of the array.
+- It declares a double array data and initializes it with some values.
+- It declares a double variable k that represents the value to be searched.
+- It calls the sequential_search function and assigns the returned value to the posisi variable.
+- It checks the value of posisi:
+  - If it is not equal to -1, it means the value k is found in the array, so it displays a message indicating the position of the value.
+  - If it is -1, it means the value k is not found in the array, so it displays a message indicating that the value is not found.
+- Finally, the main function returns 0 to indicate successful program execution.
+Overall, this program demonstrates the implementation of sequential search to find a specific value in an array of doubles.
+
+## 045_BinarySearch.cpp
+This program implements binary search to find a specific value in an array of characters. Here's how the code works:
+1. Binary Search Function:
+- The program defines a function named function_binary_search that takes three parameters: an array of characters data, an integer n (the size of the array), and a character k (the value to be searched).
+- It initializes variables atas (top), bawah (bottom), tengah (middle), and posisi (position).
+- It sets the boolean variable ada (found) to false, bawah to 0, atas to n - 1, and posisi to -1.
+- It enters a while loop that continues as long as bawah is less than or equal to atas.
+- Inside the loop, it calculates the value of tengah as the average of atas and bawah.
+- It performs comparisons to determine the position of the value k in the array:
+  - If k is equal to data[tengah], it means the value is found, so it updates posisi with the index of the found value and breaks out of the loop.
+  - If k is less than data[tengah], it means the value is in the lower half of the array, so it updates atas to tengah - 1.
+  - If k is greater than data[tengah], it means the value is in the upper half of the array, so it updates bawah to tengah + 1.
+- After the loop, it returns the value of posisi.
+2. Main Function:
+- The program starts the execution from the main function.
+- It declares an integer variable n with the size of the array.
+- It declares a character array data and initializes it with some values.
+- It declares a character variable k that represents the value to be searched.
+- It calls the function_binary_search function and assigns the returned value to the posisi variable.
+- It checks the value of posisi:
+  - If it is not equal to -1, it means the value k is found in the array, so it displays a message indicating the position of the value.
+  - If it is -1, it means the value k is not found in the array, so it displays a message indicating that the value is not found.
+- Finally, the main function returns 0 to indicate successful program execution.
+Overall, this program demonstrates the implementation of binary search to find a specific value in an array of characters.
+
+## 046_SequentalSearch2.cpp
+This program implements a sequential search to find a specific license plate number in an array of strings. Here's how the code works:
+1. Function isi():
+- This function prompts the user to enter a license plate number and reads the input using getline.
+- It returns the entered license plate number as a string.
+2. Function sequential_search():
+- This function takes three parameters: an integer a (the size of the array), an array of strings b, and a string c (the license plate number to be searched).
+- It initializes variables d, e, and f.
+- If a is less than or equal to 0, it sets d to -1.
+- Otherwise, it sets f to 0 and enters a while loop.
+- Inside the loop, it compares each element of the array with the search string c.
+- If a match is found, it updates d with the index of the found license plate number and sets f to 1 to indicate a match.
+- If no match is found, it increments e to continue searching.
+- If no match is found after searching the entire array, it sets d to -1.
+- Finally, it returns the value of d.
+3. Procedure tampil():
+- This procedure takes two parameters: a string c (the searched license plate number) and an integer d (the position of the license plate number in the array).
+- It checks the value of d:
+  - If it is not equal to -1, it means the license plate number is found, so it displays a message indicating its presence in the database.
+  - If it is -1, it means the license plate number is not found, so it displays a message indicating its absence in the database.
+4. Main Function:
+- The program starts the execution from the main function.
+- It declares a character variable j to store the user's choice to repeat the search.
+- It declares an integer variable a with the size of the array.
+- It declares an array of strings b and initializes it with some license plate numbers.
+- It calls the isi() function to get the license plate number to be searched and assigns it to the string variable c.
+- It calls the sequential_search() function to search for the license plate number in the array and assigns the returned value to the integer variable d.
+- It calls the tampil() procedure to display whether the license plate number is found or not.
+- It prompts the user if they want to repeat the search and reads the input into the variable j.
+- If the user chooses to repeat (input 'y'), the program clears the screen using system("cls") and goes to the label 'i', which restarts the search.
+- If the user chooses not to repeat (input 't'), the program terminates.
+Overall, this program allows the user to search for a license plate number in an array using sequential search. It provides the option to repeat the search multiple times.
+
+## 047_BinarySearch2.cpp
+This program implements a binary search algorithm to search for a specific NIM (student ID) in an array of integers. Here's how the code works:
+1.Function isi():
+- This function prompts the user to enter an NIM and reads the input using cin.
+- It returns the entered NIM as an integer.
+2. Function function_binary_search():
+- This function takes three parameters: an integer a (the size of the array), an array of integers b, and an integer c (the NIM to be searched).
+- It initializes variables d, e, f, and g.
+- It sets h (a boolean) to false and e to 0.
+- It sets f to a - 1 to indicate the last index of the array.
+- It sets d to -1 initially to indicate that the NIM is not found.
+- It enters a while loop as long as e is less than or equal to f.
+- Inside the loop, it calculates the middle index g as (f + e) / 2.
+- If the NIM at index g matches the searched NIM c, it updates d to g and breaks out of the loop.
+- If the searched NIM c is less than the NIM at index g, it updates f to g - 1 to search in the lower half of the array.
+- If the searched NIM c is greater than the NIM at index g, it updates e to g + 1 to search in the upper half of the array.
+- Finally, it returns the value of d.
+3. Procedure tampil():
+- This procedure takes two parameters: an integer c (the searched NIM) and an integer d (the position of the NIM in the array).
+- It checks the value of d:
+  - If it is not equal to -1, it means the NIM is found, so it displays a message indicating its presence in the class.
+  - If it is -1, it means the NIM is not found, so it displays a message indicating its absence in the class.
+4. Main Function:
+- The program starts the execution from the main function.
+- It declares a character variable j to store the user's choice to repeat the search.
+- It declares an integer variable a with the size of the array.
+- It declares an array of integers b and initializes it with some NIM values.
+- It calls the isi() function to get the NIM to be searched and assigns it to the integer variable c.
+- It calls the function_binary_search() function to search for the NIM in the array and assigns the returned value to the integer variable d.
+- It calls the tampil() procedure to display whether the NIM is found or not.
+- It prompts the user if they want to repeat the search and reads the input into the variable j.
+- If the user chooses to repeat (input 'y'), the program clears the screen using system("cls") and goes to the label 'i', which restarts the search.
+- If the user chooses not to repeat (input 't'), the program terminates.
+Overall, this program allows the user to search for an NIM in an array using binary search. It provides the option to repeat the search multiple times.
+
+## 048_BinarySearchBubbleSort.cpp
+This program demonstrates a binary search algorithm to search for a specific number in an array. Here's how the code works:
+1. Procedure tampil():
+- This procedure takes two parameters: an integer a (the size of the array) and an array of integers b.
+- It uses a while loop to iterate through the array and display each element.
+- The loop continues until the variable c reaches the size of the array.
+- The elements are displayed using cout.
+2. Procedure bubble_sort():
+- This procedure takes two parameters: an integer a (the size of the array) and an array of integers b.
+- It initializes variables c to true, d to 0, and e.
+- It enters a while loop with c as the condition.
+- Inside the loop, it sets c to false and increments d.
+- It then enters a for loop from 0 to a - d.
+- Inside the for loop, it compares each element with the next element and swaps them if necessary to sort the array in ascending order.
+- After sorting, it sets c to true if any swapping occurs, indicating that another pass is required.
+- The loop continues until the array is sorted in ascending order.
+3. Function isi():
+- This function prompts the user to enter a number and reads the input using cin.
+- It returns the entered number as an integer.
+4. Function function_binary_search():
+- This function takes three parameters: an integer a (the size of the array), an array of integers b, and an integer c (the number to be searched).
+- It initializes variables d, e, f, g, and h (a boolean).
+- It sets h to false, e to 0, f to a - 1, and d to -1 initially to indicate that the number is not found.
+- It enters a while loop as long as e is less than or equal to f.
+- Inside the loop, it calculates the middle index g as (f + e) / 2.
+- If the number at index g matches the searched number c, it updates d to g and breaks out of the loop.
+- If the searched number c is less than the number at index g, it updates f to g - 1 to search in the lower half of the array.
+- If the searched number c is greater than the number at index g, it updates e to g + 1 to search in the upper half of the array.
+- Finally, it returns the value of d.
+5. Main Function:
+- The program starts the execution from the main function.
+- It declares a character variable j to store the user's choice to repeat the search.
+- It declares an integer variable a with the size of the array.
+- It declares an array of integers b and initializes it with some numbers.
+- It calls the tampil() procedure to display the numbers before sorting.
+- It calls the bubble_sort() procedure to sort the array in ascending order.
+- It calls the tampil() procedure again to display the numbers after sorting.
+- It calls the isi() function to get the number to be searched and assigns it to the integer variable c.
+- It calls the function_binary_search() function to search for the number c in the sorted array b and assigns the returned value to the integer variable d.
+- It calls the tampil() procedure to display whether the number is found or not.
+- It prompts the user if they want to repeat the search and reads the input into the variable j.
+- If the user chooses to repeat (input 'y'), the program clears the screen using system("cls") and goes to the label 'i' using the goto statement. This allows the program to restart the search process.
+- If the user chooses not to repeat (input 't'), the program terminates.
+In summary, this program sorts an array of numbers using the bubble sort algorithm and then performs a binary search to find a specific number in the sorted array. The program allows the user to repeat the search multiple times by clearing the screen and restarting the search process if desired.
