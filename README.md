@@ -716,3 +716,37 @@ This program demonstrates a binary search algorithm to search for a specific num
 - If the user chooses to repeat (input 'y'), the program clears the screen using system("cls") and goes to the label 'i' using the goto statement. This allows the program to restart the search process.
 - If the user chooses not to repeat (input 't'), the program terminates.
 In summary, this program sorts an array of numbers using the bubble sort algorithm and then performs a binary search to find a specific number in the sorted array. The program allows the user to repeat the search multiple times by clearing the screen and restarting the search process if desired.
+
+## 049_Diary.cpp
+The given code is a diary application implemented in C++. It allows users to input and view their diary entries. Let's go through the different parts of the code:
+1. Header Files:
+- iostream, conio.h, windows.h, string, iomanip: These are the header files included in the code to provide functionality for input/output, console manipulation, string operations, and stream manipulators.
+2. Struct:
+- The data struct is defined to represent a diary entry. It contains three character arrays: judul (title), tanggal (date), and catatan (note).
+3. Global Variables:
+- banyak: It is an array of data struct elements, used to store multiple diary entries.
+- jumlahdata, temp: These variables hold the number of diary entries and are used for tracking the count of entries.
+- checkbaru: It is a boolean variable that helps determine whether new entries need to be added or appended.
+4. Function Declarations:
+- gotoxy(): This function is used to set the cursor position on the console screen.
+- loadsc(): It displays the initial welcome screen of the diary application.
+- loginawal(): It handles the initial login process for accessing the diary.
+- menu(): It displays the menu options and allows the user to select an option.
+- inputdata(): It takes an integer parameter batas and allows the user to input diary entries based on the provided limit.
+- input(): It handles the process of inputting diary entries.
+- lihatdata(): It displays all the stored diary entries and allows the user to select and view a specific entry.
+- loginpasstampil(): It prompts the user to enter a password to view the diary entries and displays the entries if the password is correct.
+- cari(): It allows the user to search for diary entries based on the title.
+- keluar(): It prompts the user for confirmation to exit the application and returns a boolean value indicating the user's choice.
+- error(): It displays an error message for invalid menu options.
+5. Main Function:
+- The main() function is the entry point of the program.
+- It first calls the loadsc() function to display the welcome screen.
+- Then, it calls the loginawal() function to handle the initial login process.
+- After successful login, it enters a loop that displays the menu using the menu() function and executes the selected option.
+- The options include:
+  - 1: Input new diary entries using the input() function.
+  - 2: Display existing diary entries using the lihatdata() function.
+  - 3: Search for diary entries based on the title using the cari() function.
+  - 4: Exit the application after confirmation using the keluar() function.
+That's a detailed explanation of the given code. It provides basic functionality for managing diary entries through input, display, and search operations.
